@@ -16,11 +16,11 @@ class SignerInfoV2 extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>int32 SignerType = 1;</code>
      */
-    private $SignerType = 0;
+    protected $SignerType = 0;
     /**
      * Generated from protobuf field <code>int32 ExtendedDocumentTitleType = 2;</code>
      */
-    private $ExtendedDocumentTitleType = 0;
+    protected $ExtendedDocumentTitleType = 0;
 
     /**
      * Constructor.

@@ -16,19 +16,19 @@ class DocumentMetadataItemV2 extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string Id = 1;</code>
      */
-    private $Id = '';
+    protected $Id = '';
     /**
      * Generated from protobuf field <code>int32 Type = 2;</code>
      */
-    private $Type = 0;
+    protected $Type = 0;
     /**
      * Generated from protobuf field <code>bool Is = 3;</code>
      */
-    private $Is = false;
+    protected $Is = false;
     /**
      * Generated from protobuf field <code>int32 Source = 4;</code>
      */
-    private $Source = 0;
+    protected $Source = 0;
 
     /**
      * Constructor.

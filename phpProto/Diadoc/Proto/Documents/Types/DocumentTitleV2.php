@@ -16,23 +16,23 @@ class DocumentTitleV2 extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>int32 Index = 7;</code>
      */
-    private $Index = 0;
+    protected $Index = 0;
     /**
      * Generated from protobuf field <code>bool IsFormal = 1;</code>
      */
-    private $IsFormal = false;
+    protected $IsFormal = false;
     /**
      * Generated from protobuf field <code>string XsdUrl = 2;</code>
      */
-    private $XsdUrl = '';
+    protected $XsdUrl = '';
     /**
      * Generated from protobuf field <code>string UserDataXsdUrl = 5;</code>
      */
-    private $UserDataXsdUrl = '';
+    protected $UserDataXsdUrl = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.Types.SignerInfoV2 SignerInfo = 6;</code>
      */
-    private $SignerInfo = null;
+    protected $SignerInfo = null;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.Documents.Types.DocumentMetadataItemV2 MetadataItems = 3;</code>
      */

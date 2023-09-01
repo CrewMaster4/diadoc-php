@@ -16,11 +16,11 @@ class DocumentTypeDescriptionV2 extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string Name = 1;</code>
      */
-    private $Name = '';
+    protected $Name = '';
     /**
      * Generated from protobuf field <code>string Title = 2;</code>
      */
-    private $Title = '';
+    protected $Title = '';
     /**
      * Generated from protobuf field <code>repeated int32 SupportedDocflows = 3;</code>
      */
@@ -28,7 +28,7 @@ class DocumentTypeDescriptionV2 extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool RequiresFnsRegistration = 4;</code>
      */
-    private $RequiresFnsRegistration = false;
+    protected $RequiresFnsRegistration = false;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.Documents.Types.DocumentFunctionV2 Functions = 9;</code>
      */

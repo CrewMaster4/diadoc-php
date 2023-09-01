@@ -4,6 +4,7 @@ import "Documents/Document.proto";
 package Diadoc.Proto.Documents;
 
 message DocumentList {
-	 int32 TotalCount = 1;
-	repeated Document Documents = 2;
+    required int32 TotalCount = 1;
+    repeated Document Documents = 2;
+    optional bool HasMoreResults = 3;
 }

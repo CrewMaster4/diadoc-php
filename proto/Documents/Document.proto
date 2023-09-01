@@ -71,6 +71,7 @@ message Document {
 	 NonformalizedDocument.NonformalizedDocumentMetadata CertificateRegistryMetadata = 55;
 	 UniversalTransferDocument.UniversalTransferDocumentMetadata UniversalTransferDocumentMetadata = 56;
 	 string Function = 64;
+	string Title = 66;
 }
 
 message ResolutionStatus {

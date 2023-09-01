@@ -233,6 +233,10 @@ class Document extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string Function = 64;</code>
      */
     private $Function = '';
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     */
+    private $Title = '';
 
     /**
      * Constructor.
@@ -295,6 +299,7 @@ class Document extends \Google\Protobuf\Internal\Message
      *     @type \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata $CertificateRegistryMetadata
      *     @type \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata $UniversalTransferDocumentMetadata
      *     @type string $Function
+     *     @type string $Title
      * }
      */
     public function __construct($data = NULL) {
@@ -1508,6 +1513,28 @@ class Document extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->Function = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->Title;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTitle($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->Title = $var;
 
         return $this;
     }

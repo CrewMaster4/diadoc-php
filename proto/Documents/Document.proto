@@ -70,8 +70,9 @@ message Document {
 	 NonformalizedDocument.NonformalizedDocumentMetadata PriceListAgreementMetadata = 54;
 	 NonformalizedDocument.NonformalizedDocumentMetadata CertificateRegistryMetadata = 55;
 	 UniversalTransferDocument.UniversalTransferDocumentMetadata UniversalTransferDocumentMetadata = 56;
+	 string TypeNamedId = 63;
 	 string Function = 64;
-	string Title = 66;
+	 string Title = 66;
 }
 
 message ResolutionStatus {

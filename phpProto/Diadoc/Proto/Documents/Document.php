@@ -230,6 +230,10 @@ class Document extends \Google\Protobuf\Internal\Message
      */
     private $UniversalTransferDocumentMetadata = null;
     /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     */
+    private $TypeNamedId = '';
+    /**
      * Generated from protobuf field <code>string Function = 64;</code>
      */
     private $Function = '';
@@ -298,6 +302,7 @@ class Document extends \Google\Protobuf\Internal\Message
      *     @type \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata $PriceListAgreementMetadata
      *     @type \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata $CertificateRegistryMetadata
      *     @type \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata $UniversalTransferDocumentMetadata
+     *     @type string $TypeNamedId
      *     @type string $Function
      *     @type string $Title
      * }
@@ -1491,6 +1496,28 @@ class Document extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata::class);
         $this->UniversalTransferDocumentMetadata = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     * @return string
+     */
+    public function getTypeNamedId()
+    {
+        return $this->TypeNamedId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTypeNamedId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->TypeNamedId = $var;
 
         return $this;
     }

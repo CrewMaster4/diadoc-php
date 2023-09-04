@@ -242,9 +242,9 @@ class Document extends \Google\Protobuf\Internal\Message
      */
     private $Title = '';
     /**
-     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     * Generated from protobuf field <code>repeated .Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
      */
-    private $Metadata = null;
+    private $Metadata;
 
     /**
      * Constructor.
@@ -309,7 +309,7 @@ class Document extends \Google\Protobuf\Internal\Message
      *     @type string $TypeNamedId
      *     @type string $Function
      *     @type string $Title
-     *     @type \Diadoc\Proto\Documents\MetadataItem $Metadata
+     *     @type \Diadoc\Proto\Documents\MetadataItem[]|\Google\Protobuf\Internal\RepeatedField $Metadata
      * }
      */
     public function __construct($data = NULL) {
@@ -1572,8 +1572,8 @@ class Document extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
-     * @return \Diadoc\Proto\Documents\MetadataItem
+     * Generated from protobuf field <code>repeated .Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMetadata()
     {
@@ -1581,14 +1581,14 @@ class Document extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
-     * @param \Diadoc\Proto\Documents\MetadataItem $var
+     * Generated from protobuf field <code>repeated .Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     * @param \Diadoc\Proto\Documents\MetadataItem[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMetadata($var)
     {
-        GPBUtil::checkMessage($var, \Diadoc\Proto\Documents\MetadataItem::class);
-        $this->Metadata = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Diadoc\Proto\Documents\MetadataItem::class);
+        $this->Metadata = $arr;
 
         return $this;
     }

@@ -1,0 +1,6 @@
+syntax="proto3";
+
+message MetadataItem {
+    string Key = 1;
+    string Value = 2;
+}

@@ -241,6 +241,10 @@ class Document extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string Title = 66;</code>
      */
     private $Title = '';
+    /**
+     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     */
+    private $Metadata = null;
 
     /**
      * Constructor.
@@ -305,6 +309,7 @@ class Document extends \Google\Protobuf\Internal\Message
      *     @type string $TypeNamedId
      *     @type string $Function
      *     @type string $Title
+     *     @type \Diadoc\Proto\Documents\MetadataItem $Metadata
      * }
      */
     public function __construct($data = NULL) {
@@ -1562,6 +1567,28 @@ class Document extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->Title = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     * @return \Diadoc\Proto\Documents\MetadataItem
+     */
+    public function getMetadata()
+    {
+        return $this->Metadata;
+    }
+
+    /**
+     * Generated from protobuf field <code>.Diadoc.Proto.Documents.MetadataItem Metadata = 67;</code>
+     * @param \Diadoc\Proto\Documents\MetadataItem $var
+     * @return $this
+     */
+    public function setMetadata($var)
+    {
+        GPBUtil::checkMessage($var, \Diadoc\Proto\Documents\MetadataItem::class);
+        $this->Metadata = $var;
 
         return $this;
     }

@@ -73,6 +73,12 @@ message Document {
 	 string TypeNamedId = 63;
 	 string Function = 64;
 	 string Title = 66;
+	 MetadataItem Metadata = 67;
+}
+
+message MetadataItem {
+    string Key = 1;
+    string Value = 2;
 }
 
 message ResolutionStatus {
@@ -115,3 +121,5 @@ enum SenderSignatureStatus {
 	SenderSignatureCheckedAndValid = 3;
 	SenderSignatureCheckedAndInvalid = 4;
 }
+
+

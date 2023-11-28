@@ -1079,7 +1079,7 @@ class DiadocApi
         bool $populateDocuments = false,
         bool $populatePreviousDocumentStates = false,
         bool $injectEntityContent = false,
-        ?int $afterIndexKey = null
+        ?string $afterIndexKey = null
     ): GetDocflowEventsResponse {
         $timeBasedFilter = new TimeBasedFilter();
         $fromTimestamp = null;
